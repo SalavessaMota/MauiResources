@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiResources.MainPage"
+             BackgroundColor="White">
+
+    <!--<ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="tenis.jpg" Aspect="Fill" />
+            <Image Source="computer.png" />
+            <Image Source="superman.gif" IsAnimationPlaying="True" />
+            <Image Source="dotnet_bot.png" WidthRequest="100" HeightRequest="100" />
+            <Image Source="https://aircinelmvc.blob.core.windows.net/resources/logoAirCinel.jpg" />
+            <Image>
+                <Image.Source>
+                    <UriImageSource Uri="https://aircinelmvc.blob.core.windows.net/resources/lisbon.jpeg" CacheValidity="10:00:00:00" />
+                </Image.Source>
+            </Image>
+        </VerticalStackLayout>
+    </ScrollView>-->
+
+    <!--<VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label Text="Usando fontes " FontSize="30" />
+
+        <Label Text="Usando fontes " FontSize="30" FontFamily="Android" />
+
+        <Label Text="Usando fontes " FontSize="30" FontFamily="Pacifico" />
+
+        -->
+    <!--<Label Text="Diferente propriedades de Fontes em diferentes plataformas" FontSize="{OnPlatform iOS=20, Android=22,WinUI=24}">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="MarkerFelt-Thin" />
+                    <On Platform="Android" Value="Android" />
+                    <On Platform="WinUI" Value="Android" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>-->
+    <!--
+
+        <Label Text="Usando fontes " FontSize="30" FontFamily="MinhaFonte" />
+    </VerticalStackLayout>-->
+
+    <!--<VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Image>
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="IconsFont"
+                    Glyph="&#xE803;"
+                    Size="40" />
+            </Image.Source>
+        </Image>
+
+        <Image>
+            <Image.Source>
+                <FontImageSource
+                    Glyph="&#xF1E5;"
+                    FontFamily="{OnPlatform Android=IconsFont}"
+                    Size="40" />
+            </Image.Source>
+        </Image>
+
+        <Image BackgroundColor="#D1D1D1"
+               Source="{FontImage &#xF1EC;, FontFamily=IconsFont, Size=44}" />
+    </VerticalStackLayout>-->
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Image Source="{Binding Foto}" Aspect="Fill" />
+
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Label Text="{Binding Nome}" FontSize="30" />
+            <Label Text="{Binding Sobrenome}" FontSize="30" />
+            <Label Text="{Binding Idade}" FontSize="30" />
+        </VerticalStackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>
